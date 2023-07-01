@@ -46,4 +46,4 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         source: "build/reobfJar/output.jar"
-        target: /moddingtester/mods
+        target: ~/moddingtester/mods
