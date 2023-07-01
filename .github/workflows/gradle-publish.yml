@@ -56,6 +56,8 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
+          screen -ls
           screen -X -S "sots" kill
           screen -d -m -S "sots" /home/admin/moddingtester/run.sh
+          screen -ls
 
