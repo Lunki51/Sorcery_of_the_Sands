@@ -37,10 +37,13 @@ jobs:
 
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
     # the publishing section of your build.gradle
-    - name: Publish to test server
-      working-directory: build/reobfJar
-      run: 
-        scp output.jar $SERVER:~/moddingtester/mods/sots.jar -p $PASSWORD
-      env:
-        SERVER: ${{ vars.server }}
-        PASSWORD: ${{ vars.server_password }}
+    
+    - name: copy file via ssh password
+      uses: appleboy/scp-action@v0.1.4
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        source: "build/reobfJar/output.jar"
+        target: /moddingtester/mods/sots.jar
