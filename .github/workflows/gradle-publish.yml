@@ -55,4 +55,6 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        script: /home/admin/moddingtester/restart.sh
+        script: |
+          /home/admin/moddingtester/restart.sh
+          ls /home/admin/moddingtester/
