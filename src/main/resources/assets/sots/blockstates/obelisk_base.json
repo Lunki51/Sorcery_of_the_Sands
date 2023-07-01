@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "invisible=true,3d=false": { "model": "block/air" },
+    "invisible=false,3d=false": { "model": "sots:block/obelisk_base" },
+    "invisible=true,3d=true": { "model": "block/air" },
+    "invisible=false,3d=true": { "model": "sots:block/obelisk_full" }
+  }
+}

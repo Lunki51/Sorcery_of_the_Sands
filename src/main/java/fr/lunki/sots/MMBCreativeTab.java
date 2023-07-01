@@ -1,5 +1,6 @@
 package fr.lunki.sots;
 
+import fr.lunki.sots.registry.SOTSItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
@@ -12,6 +13,6 @@ public class MMBCreativeTab extends CreativeModeTab {
 
     @Override
     public ItemStack makeIcon() {
-        return new ItemStack(Register.ANKH.get());
+        return new ItemStack(SOTSItems.ANKH.get());
     }
 }

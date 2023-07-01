@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "invisible=false": { "model": "sots:block/obelisk_top" },
+        "invisible=true": { "model": "block/air" }
+    }
+}
