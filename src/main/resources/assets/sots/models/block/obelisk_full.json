@@ -1,0 +1,9 @@
+{
+  "loader": "forge:obj",
+  "flip_v": true,
+  "model": "sots:models/block/obelisk_full.obj",
+  "textures": {
+    "texture0": "sots:block/obelisk",
+    "particle": "minecraft:block/sandstone"
+  }
+}

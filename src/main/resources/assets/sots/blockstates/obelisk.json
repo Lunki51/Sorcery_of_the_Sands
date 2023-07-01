@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "complete=1": { "model": "sots:block/obelisk_full" },
+    "complete=0": { "model": "minecraft:block/sandstone" },
+    "complete=2": { "model": "minecraft:block/air" }
+  }
+}
