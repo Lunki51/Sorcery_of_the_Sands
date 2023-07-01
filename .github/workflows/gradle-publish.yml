@@ -56,5 +56,6 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          /home/admin/moddingtester/restart.sh
-          ls /home/admin/moddingtester/
+          screen -X -S "sots" kill
+          screen -d -m -S "sots" /home/admin/moddingtester/run.sh
+
