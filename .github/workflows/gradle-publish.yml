@@ -58,7 +58,7 @@ jobs:
         script: |
           pwd
           screen -X -S "sots" kill
-          screen -d -m -S "sots" ./run.sh
+          screen -d -m -S "sots" ./moddingtester/run.sh
           screen -ls
           screen -r sots
 
